@@ -8,4 +8,7 @@ console.log(typeof(a))
 let b=3.45
 console.log(typeof(b))
 
+
+//To display the type of variable c which are string
 let c="Dingdong Pogi"
+console.log(typeof(c))
