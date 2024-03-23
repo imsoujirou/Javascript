@@ -41,3 +41,45 @@ console.log("*********************") // [12,20,40,35,14,37,100]
 for(let i=0;i<marks.length;i++){
     console.log(marks[i]) //for this one, you will display all the array based on the length of an array.
 }
+
+console.log("*********************") // [12,20,40,35,14,37,100]
+let sum = 0;
+for(let i=0;i<marks.length;i++){
+    sum = sum + marks[i]
+}
+console.log(sum) //This is to display all the added value on arrays
+
+
+
+console.log("******")
+const numbers = [1,2,3,4]
+const sum1 = numbers.reduce(function (result, item){
+    return result + item;
+}, 0);
+console.log(sum1)
+
+
+//The task is to create new array with even numbers of score 
+var scores = [12,13,14,16]
+var evenNumbers = []
+for(let i=0;i<scores.length;i++){
+    if(scores[i]%2 == 0){
+        evenNumbers.push(scores[i])
+    }
+}
+console.log(evenNumbers)
+console.log(scores)
+
+//The task is to create a new array with odd numbers of score
+let scores1 = [12,13,14,15,16]
+var oddNumbers = []
+// for(let i=0;i<scores1.length;i++){
+//     if(scores1[i]%2 == 1){
+//         oddNumbers.push(scores1[i])
+//     }
+// }
+// console.log(oddNumbers)
+
+
+scores1.filter(score=>score%2==1)
+console.log(scores1)
